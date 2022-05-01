@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>MarketScientists.Services</RootNamespace>
+		<AssemblyName>MarketScientists.Services</AssemblyName>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutputType>Library</OutputType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>MarketScientists.Services</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Authors>Marcel Galovič</Authors>
+		<Company>Market Scientists</Company>
+		<Title>Services</Title>
+		<Summary>C# serviecs providing financial markets data</Summary>
+		<RepositoryUrl>https://github.com/Market-Scientists/services</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IsPackable>true</IsPackable>
+		<PackOnBuild>true</PackOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Services.Abstractions\Services.Abstractions.csproj" />
+	</ItemGroup>
+</Project>
