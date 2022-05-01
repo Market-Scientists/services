@@ -1,2 +1,2 @@
-# services-interfaces
-Interfaces of services provided by Market Scientists
+# services
+Services provided by Market Scientists
